@@ -26,36 +26,34 @@
 </head>
 
 <body>
-<div class="container">
-    
+
     <header class="header">
         <div class="logo">
-            <img src="img/logo_horizontal_preto.png" width="150px" alt="Yumi.E Logotipo">
+            <a href="index.html"><img src="img/logo_horizontal_preto.png"width="150px" alt="Yumi.E Logotipo"></a>
         </div>
-            <div id="search">
+            <div id="search-container">
                     <form>
                         <input type="text" id="search-input" placeholder="Qual produto você está procurando?" />
-                            <button id="search-button">
+                            <button class="search-button">
                                 <i class="fa-solid fa-search"></i>
                             </button>
                     </form>
             </div>
-
+            <div class="cart-login-container">
             <div class="login-container">
                 <section class="login">
-                    <i class="fa-solid fa-user"></i>
-                    <a href="login-btn">Entrar</a>
+                    <a class="login-btn" href="login.html"><i class="fa-solid fa-user"></i> Entrar</a>
                 </section>
             </div>
             <div class="cart-container">
                 <section class="cart">
-                    <i class="fa-solid fa-shop"></i>
-                    <a href="cart-btn">Carrinho</a>
+                    <a class="cart-btn" href="#"><i class="fa-solid fa-shop"></i> Carrinho</a>
                 </section>
             </div>
+        </div>
     </header>
-
-    <nav class="menu-container">
+<!--
+<nav class="menu-container">
         <ul>
             <li><a href="#"> Opção 1</a></li>
 
@@ -77,6 +75,34 @@
         </ul>
     </nav>
 
+-->
+
+    <div class="menu-container">
+    <nav>
+      <ul>
+        <li><a href="#"> Opção 1</a></li>
+
+            <li><a href="#"> Opção 2 <i class="fa-solid fa-caret-down"></i></a>
+            <ul>
+                <li><a href="#">Sub 1</a></li>
+                <li><a href="#">Sub 2</a></li>
+            </ul>
+            </li>
+
+            <li><a href="#">Opção 3 <i class="fa-solid fa-caret-down"></i></a>
+            <ul>
+                <li><a href="#">Sub 1</a></li>
+                <li><a href="#">Sub 2</a></li>
+            </ul>
+            </li>
+
+            <li><a href="#">Opção 4</a></li>
+      </ul>
+    </nav>
+  </div>
+<div class="container">
+
+  
     <div id="my-keen-slider" class="keen-slider">
         <div class="keen-slider__slide number-slide1">1</div>
         <div class="keen-slider__slide number-slide2">2</div>
@@ -85,18 +111,99 @@
         <div class="keen-slider__slide number-slide5">5</div>
         <div class="keen-slider__slide number-slide6">6</div>
       </div>
-</div>
-<div class="wrapper">
-    <p class="balao-zap">Envie uma mensagem via Whatsapp</p>
-	<a id="fa-icon" href="https://api.whatsapp.com/send/?phone=5541984635941&amp;text=Olá,+gostaria+de+mais+informações.&amp;app_absent=0" target="_blank">
-		<i class="contact-icon fab fa-whatsapp" style="color: #fff;"></i>
-        
-        
-	</a>	
-</div>
-</div>
-    <Footer>
 
-    </Footer>
+      <div class="wrapper">
+        <p class="balao-zap">Envie uma mensagem via Whatsapp</p>
+        <a id="fa-icon" href="https://api.whatsapp.com/send/?phone=5541984635941&amp;text=Olá,+gostaria+de+mais+informações.&amp;app_absent=0" target="_blank">
+            <i class="contact-icon fab fa-whatsapp" style="color: #fff;"></i>
+            
+            
+        </a>	
+    </div>
+    <div class="novidades">
+        <h1>Novidades</h1>
+        
+        <div class="produtos-novidade">
+    
+            <section class="produto-novidade">
+                <i class="fa-solid fa-arrows-to-circle"></i>
+                <br><caption>Sabonete 1</caption>
+            </section>
+    
+            <section class="produto-novidade">
+                <i class="fa-solid fa-arrows-to-circle"></i>
+                <br><caption>Sabonete 1</caption>
+            </section>
+                
+            <section class="produto-novidade">
+                <i class="fa-solid fa-arrows-to-circle"></i>
+                <br><caption>Sabonete 1</caption>
+            </section>
+    
+            <section class="produto-novidade">
+                <i class="fa-solid fa-arrows-to-circle"></i>
+                <br><caption>Sabonete 1</caption>
+            </section>
+    
+        </div>
+    
+    </div>
+    
+    <div class="blog">
+        <h1>Blog</h1>
+        <div class="blog-curiosidade">
+            <div class=".blog-img-curiosidade">
+                <img src="/img/img-vela-aleatoria.jpg" alt="blog-img-vela" style="border-radius: 20px;">
+            </div>
+        
+            <div class="blog-texto-curiosidade">
+                <h2>Curiosidade</h2>
+                <caption>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti in, ad dignissimos facilis odio libero iste, enim illo velit unde possimus blanditiis maxime quaerat voluptatem, earum quam doloribus labore consectetur!</caption>
+            </div>
+        </div>
+    </div>
+    
+    <div class="selos">
+    <img src="img/selos.png" alt="selos" width="900px">
+    </div>
+</div>
+    </div>
+
+<footer class="footer">
+    <div class="newsletter">
+        <p>Fique por dentro das novidades!
+        Receba nossas novidades e promoções quentinhas no seu e-mail. Inscreva-se!</p>
+        <input type="text" placeholder="E-mail" class="inscricao-email"><button class="inscricao-btn">Inscrever-se</button>
+    </div>
+    <nav class="footer-navegacao">
+        <ul>Títular
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+        </ul>
+
+        <ul>Títular
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+        </ul>
+
+        <ul>Títular
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+        </ul>
+
+        <ul>Títular
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+            <li><a href="">Opção</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
